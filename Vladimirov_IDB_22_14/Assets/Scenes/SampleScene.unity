@@ -406,6 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textObject: {fileID: 1354653553}
+  clicks: 0
 --- !u!1 &1829543932 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7046232262586273486, guid: 96f9163f2c5ad1c40a06825ed78b2484, type: 3}
@@ -471,6 +472,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 836f4e684b1571f45aab3daf6cfbd7c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  body: {fileID: 0}
+  speed: 100
 --- !u!1001 &1404749662051192301
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -487,6 +490,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b4df4982758318543a4f30d70a7fd304, type: 2}
+    - target: {fileID: 3030441722428171348, guid: 2d9845a409d752d47a0d4d0def2b937f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8757152638131706645, guid: 2d9845a409d752d47a0d4d0def2b937f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.94
@@ -644,7 +651,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1814533312702961660, guid: 96f9163f2c5ad1c40a06825ed78b2484, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

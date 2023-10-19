@@ -9,7 +9,7 @@ using UnityEngine.UIElements;
 public class test_script : MonoBehaviour
 {
     public TMP_Text textObject;
-    uint clicks = 0;
+    public int clicks = 0;
 
     // Update is called once per frame
     void Update()
@@ -21,15 +21,13 @@ public class test_script : MonoBehaviour
     {
         MeshRenderer mesh = gameObject.GetComponent<MeshRenderer>();
 
-        if(mesh.enabled)
-        {
-            mesh.enabled = false;
-        }
-        else
-        {
-            mesh.enabled=true;
-        }
+        mesh.enabled = !(mesh.enabled);
 
         textObject.text = (++clicks).ToString();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        textObject.text = (--clicks).ToString();
     }
 }
